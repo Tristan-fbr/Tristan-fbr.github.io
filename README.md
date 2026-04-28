@@ -9,6 +9,9 @@ Personal static website for Tristan Fabre, published with GitHub Pages.
 - `script.js`: small interface interactions
 - `assets/profile.jpg`: profile picture
 - `assets/cv.pdf`: downloadable CV
+- `assets/statapp-tristan.pdf`: Meteo France / statistics project report
+- `assets/sas-memoire.pdf`: SAS report
+- `assets/monte-carlo-slides.pdf`: Monte Carlo slides
 
 ## Deployment
 
