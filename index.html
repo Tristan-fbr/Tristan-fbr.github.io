@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Site personnel de Tristan Fbr: projets, competences et contact."
+      content="Personal website of Tristan Fabre, MSc Financial Technology student at Imperial College London."
     >
-    <title>Tristan Fbr | Site personnel</title>
+    <title>Tristan Fabre | Financial Technology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,146 +17,236 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <header class="site-header" data-header>
-      <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+      <a class="brand" href="#home" aria-label="Tristan Fabre home">
         <span class="brand-mark">TF</span>
-        <span>Tristan Fbr</span>
+        <span>Tristan Fabre</span>
       </a>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#projets">Projets</a>
-        <a href="#competences">Competences</a>
-        <a href="#parcours">Parcours</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero-content">
-          <p class="eyebrow">Portfolio personnel</p>
-          <h1 id="hero-title">Bonjour, moi c'est Tristan.</h1>
+          <p class="eyebrow">Financial technology · Data · Quantitative methods</p>
+          <h1 id="hero-title">Hi, I am Tristan Fabre.</h1>
           <p class="hero-text">
-            Je construis mon espace web pour presenter mes projets, mon parcours
-            et les choses que j'aime creer. Cette page est publiee avec GitHub Pages.
+            I am a Financial Technology MSc student at Imperial College London,
+            with a background in engineering, economics, statistics and data-driven
+            finance. I enjoy building practical tools at the intersection of
+            programming, financial analysis and machine learning.
           </p>
-          <div class="hero-actions" aria-label="Actions principales">
-            <a class="button primary" href="#projets">Voir mes projets</a>
-            <a class="button secondary" href="#contact">Me contacter</a>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="assets/CV_Tristan_Fabre_English.pdf" download>
+              Download CV
+            </a>
+            <a class="button secondary" href="#contact">Get in touch</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="screen">
-            <div class="screen-bar">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="code-card">
-              <span class="line short"></span>
-              <span class="line"></span>
-              <span class="line medium"></span>
-              <span class="line accent"></span>
-            </div>
-            <div class="status-card">
-              <strong>En ligne</strong>
-              <span>GitHub Pages</span>
-            </div>
-          </div>
+        <figure class="portrait-card">
+          <img
+            src="assets/tristan-fabre.jpg"
+            alt="Portrait of Tristan Fabre wearing a suit outdoors"
+            width="836"
+            height="836"
+          >
+          <figcaption>
+            MSc Financial Technology student at Imperial College London.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A quantitative profile with a product mindset.</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            My academic path combines finance, mathematics, economics and computer
+            science. After an intensive undergraduate programme in mathematics and
+            social sciences, I joined ENSAE at the Institut Polytechnique de Paris
+            before starting the MSc Financial Technology at Imperial College London.
+          </p>
+          <p>
+            I am especially interested in financial data, credit research, natural
+            language processing, automation and portfolio-related applications.
+            I like turning complex datasets into cleaner workflows and usable
+            analytical outputs.
+          </p>
         </div>
       </section>
 
-      <section class="section" id="projets" aria-labelledby="projects-title">
+      <section class="section timeline-section" id="experience" aria-labelledby="experience-title">
         <div class="section-heading">
-          <p class="eyebrow">Selection</p>
-          <h2 id="projects-title">Projets</h2>
+          <p class="eyebrow">Experience & Education</p>
+          <h2 id="experience-title">Current path</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>2025 - 2026</span>
+            <h3>Imperial College London</h3>
+            <p>
+              MSc Financial Technology, covering accounting and corporate finance,
+              big data in finance, blockchain applications, financial econometrics
+              in R/Python, investments and portfolio management.
+            </p>
+          </article>
+          <article>
+            <span>2023 - 2025</span>
+            <h3>ENSAE, Institut Polytechnique de Paris</h3>
+            <p>
+              Master of Science in Engineering, with courses in probability theory,
+              stochastic calculus, statistics, econometrics, simulation and machine
+              learning foundations.
+            </p>
+          </article>
+          <article>
+            <span>Jun - Aug 2024</span>
+            <h3>OFI Invest Asset Management</h3>
+            <p>
+              Optimised, cleaned and automated databases in Excel, used Capital IQ
+              to retrieve company financial data, and explored LLM applications for
+              credit research.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Projects</h2>
           <p>
-            Une selection de travaux web, d'experimentations et d'idees que je
-            developpe au fil de mon apprentissage.
+            A few examples from my programming and data work. I will keep this
+            section updated as more projects become public.
           </p>
         </div>
 
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-image project-image-one"></div>
+            <div class="project-image project-image-one" aria-hidden="true"></div>
             <div class="project-body">
-              <p class="tag">Web</p>
-              <h3>Projet vitrine</h3>
+              <p class="tag">Python · NLP</p>
+              <h3>Semantic similarity analysis</h3>
               <p>
-                Une page claire pour presenter une idee, un service ou un profil.
+                Python tool for analysing semantic similarity in audit
+                recommendations, using text-processing and machine learning methods.
               </p>
-              <a href="https://github.com/Tristan-fbr" aria-label="Ouvrir le projet vitrine">Decouvrir</a>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-image project-image-two"></div>
+            <div class="project-image project-image-two" aria-hidden="true"></div>
             <div class="project-body">
-              <p class="tag">Code</p>
-              <h3>Application interactive</h3>
+              <p class="tag">Data analysis</p>
+              <h3>Weather forecast evaluation</h3>
               <p>
-                Une interface simple avec des interactions fluides en JavaScript.
+                Compared Meteo France predictions with observed weather data to
+                estimate forecast quality and identify prediction gaps.
               </p>
-              <a href="https://github.com/Tristan-fbr" aria-label="Ouvrir l'application interactive">Decouvrir</a>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-image project-image-three"></div>
+            <div class="project-image project-image-three" aria-hidden="true"></div>
             <div class="project-body">
-              <p class="tag">Design</p>
-              <h3>Experience utilisateur</h3>
+              <p class="tag">Statistics · Algorithms</p>
+              <h3>Academic programming work</h3>
               <p>
-                Une maquette ou un prototype pense pour etre lisible et agreable.
+                SAS descriptive statistics on European Social Survey data, plus
+                BFS and A* algorithm implementation in a group project.
               </p>
-              <a href="https://github.com/Tristan-fbr" aria-label="Ouvrir l'experience utilisateur">Decouvrir</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="competences" aria-labelledby="skills-title">
+      <section class="section split" id="skills" aria-labelledby="skills-title">
         <div>
-          <p class="eyebrow">Savoir-faire</p>
-          <h2 id="skills-title">Competences</h2>
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Tools I use</h2>
           <p>
-            Je travaille avec les bases du web moderne pour produire des pages
-            lisibles, rapides et agreables sur ordinateur comme sur mobile.
+            My technical stack is focused on data analysis, statistical modelling,
+            automation and finance-oriented research workflows.
           </p>
         </div>
 
-        <div class="skills-list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>GitHub Pages</span>
-          <span>Responsive design</span>
-          <span>Accessibilite</span>
+        <div class="skills-panel" aria-label="Skills list">
+          <div>
+            <h3>Programming</h3>
+            <div class="skills-list">
+              <span>Python</span>
+              <span>pandas</span>
+              <span>Polars</span>
+              <span>scikit-learn</span>
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>NLTK</span>
+              <span>SQL</span>
+              <span>R</span>
+              <span>SAS</span>
+            </div>
+          </div>
+          <div>
+            <h3>Finance & productivity</h3>
+            <div class="skills-list">
+              <span>Excel Power Query</span>
+              <span>VBA</span>
+              <span>Capital IQ</span>
+              <span>LaTeX</span>
+              <span>Canvas</span>
+            </div>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <div class="skills-list">
+              <span>French native</span>
+              <span>English B2+</span>
+              <span>Russian beginner</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section timeline-section" id="parcours" aria-labelledby="timeline-title">
+      <section class="section volunteering" aria-labelledby="volunteering-title">
         <div class="section-heading">
-          <p class="eyebrow">Progression</p>
-          <h2 id="timeline-title">Parcours</h2>
+          <p class="eyebrow">Engagement</p>
+          <h2 id="volunteering-title">Beyond coursework</h2>
         </div>
 
-        <div class="timeline">
+        <div class="volunteer-grid">
           <article>
-            <span>01</span>
-            <h3>Apprendre</h3>
-            <p>Explorer les bases du web et comprendre comment publier un site.</p>
+            <h3>Student Council</h3>
+            <p>
+              Managed partner outreach, logistics coordination and event
+              organisation to improve student life at school and within the
+              Institut Polytechnique de Paris.
+            </p>
           </article>
           <article>
-            <span>02</span>
-            <h3>Construire</h3>
-            <p>Transformer les idees en pages propres, rapides et lisibles.</p>
+            <h3>Tremplin Association</h3>
+            <p>
+              Volunteered as a mathematics tutor in underprivileged high schools.
+            </p>
           </article>
           <article>
-            <span>03</span>
-            <h3>Partager</h3>
-            <p>Mettre les projets en ligne pour les montrer facilement.</p>
+            <h3>Scouts and Guides of France</h3>
+            <p>
+              Participated in forest fire prevention and protection efforts with
+              ONF in Marseille.
+            </p>
           </article>
         </div>
       </section>
@@ -164,22 +254,23 @@
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">On se parle ?</h2>
+          <h2 id="contact-title">Let us connect.</h2>
           <p>
-            Retrouvez mes projets et mon code sur GitHub. Les autres liens
-            pourront etre ajoutes au fur et a mesure.
+            I am open to discussing internships, projects and opportunities in
+            financial technology, data science and quantitative finance.
           </p>
         </div>
         <div class="contact-actions">
-          <a class="button primary" href="https://github.com/Tristan-fbr">Voir mon GitHub</a>
-          <a class="button secondary" href="#projets">Revoir les projets</a>
+          <a class="button primary" href="mailto:tristanfabre.tf@gmail.com">Email me</a>
+          <a class="button secondary" href="https://github.com/Tristan-fbr" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/tristan-fabre-89b182292/" rel="noreferrer">LinkedIn</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span data-year></span> Tristan Fbr. Tous droits reserves.</p>
-      <a href="#accueil">Retour en haut</a>
+      <p>&copy; <span data-year></span> Tristan Fabre. Last website update: 2026.</p>
+      <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
