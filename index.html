@@ -5,272 +5,400 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Personal website of Tristan Fabre, MSc Financial Technology student at Imperial College London."
+      content="Consulting and portfolio website for Tristan Fabre, focused on engineering, AI, robotics and quantitative research."
     >
-    <title>Tristan Fabre | Financial Technology</title>
+    <title>Tristan Fabre | Engineering, AI & Quantitative Research</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="Tristan Fabre home">
-        <span class="brand-mark">TF</span>
-        <span>Tristan Fabre</span>
+        <span>TF</span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" data-nav-link>Home</a>
+        <a href="#academic-path" data-nav-link>Academic Path</a>
+        <a href="#experience" data-nav-link>Experience</a>
+        <a href="#projects" data-nav-link>Projects</a>
+        <a href="#hobbies" data-nav-link>Hobbies</a>
+        <a href="#contact" data-nav-link>Contact</a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <p class="eyebrow">Financial technology · Data · Quantitative methods</p>
-          <h1 id="hero-title">Hi, I am Tristan Fabre.</h1>
-          <p class="hero-text">
-            I am a Financial Technology MSc student at Imperial College London,
-            with a background in engineering, economics, statistics and data-driven
-            finance. I enjoy building practical tools at the intersection of
-            programming, financial analysis and machine learning.
+      <section class="hero section-shell" id="home" data-section>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Consulting · Research · Prototyping</p>
+          <h1>Hi, I’m Tristan Fabre.</h1>
+          <p class="subtitle">Engineering, AI, Robotics & Quantitative Research</p>
+          <p class="hero-description">
+            I help research teams, startups, and technical organizations turn
+            complex ideas into working prototypes, with a focus on robotics,
+            computer vision, simulation, medical imaging, and data-driven engineering.
           </p>
+
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="assets/CV_Tristan_Fabre_English.pdf" download>
-              Download CV
+            <a class="button primary" href="assets/cv.pdf" download>Download CV</a>
+            <a
+              class="button secondary"
+              href="https://www.linkedin.com/in/tristan-fabre-89b182292/"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
-            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+
+          <ul class="social-links" aria-label="Social links">
+            <li>
+              <a href="https://github.com/Tristan-fbr/Tristan-fbr.github.io" rel="noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tristan-fabre-89b182292/" rel="noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li><a href="mailto:tristanfabre.tf@gmail.com">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="portrait-wrap reveal">
+          <div class="portrait-frame">
+            <img
+              src="assets/profile.jpg"
+              alt="Portrait placeholder for Tristan Fabre"
+              width="836"
+              height="836"
+            >
+          </div>
+          <div class="signal-card" aria-hidden="true">
+            <span class="signal-dot"></span>
+            Available for selected consulting projects
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="academic-path" data-section>
+        <div class="section-heading reveal">
+          <p class="section-number">01</p>
+          <div>
+            <p class="eyebrow">Academic Path</p>
+            <h2>Training across mathematics, engineering and finance.</h2>
           </div>
         </div>
 
-        <figure class="portrait-card">
-          <img
-            src="assets/tristan-fabre.jpg"
-            alt="Portrait of Tristan Fabre wearing a suit outdoors"
-            width="836"
-            height="836"
-          >
-          <figcaption>
-            MSc Financial Technology student at Imperial College London.
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">A quantitative profile with a product mindset.</h2>
-        </div>
-        <div class="about-grid">
-          <p>
-            My academic path combines finance, mathematics, economics and computer
-            science. After an intensive undergraduate programme in mathematics and
-            social sciences, I joined ENSAE at the Institut Polytechnique de Paris
-            before starting the MSc Financial Technology at Imperial College London.
-          </p>
-          <p>
-            I am especially interested in financial data, credit research, natural
-            language processing, automation and portfolio-related applications.
-            I like turning complex datasets into cleaner workflows and usable
-            analytical outputs.
-          </p>
-        </div>
-      </section>
-
-      <section class="section timeline-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading">
-          <p class="eyebrow">Experience & Education</p>
-          <h2 id="experience-title">Current path</h2>
-        </div>
-
-        <div class="timeline">
-          <article>
-            <span>2025 - 2026</span>
-            <h3>Imperial College London</h3>
-            <p>
-              MSc Financial Technology, covering accounting and corporate finance,
-              big data in finance, blockchain applications, financial econometrics
-              in R/Python, investments and portfolio management.
-            </p>
+        <div class="vertical-timeline reveal">
+          <article class="timeline-item">
+            <span class="timeline-year">2018 - 2021</span>
+            <div>
+              <h3>High School</h3>
+              <p>
+                Scientific and humanities foundation with strong academic results,
+                discipline, and early interest in analytical problem-solving.
+              </p>
+            </div>
           </article>
-          <article>
-            <span>2023 - 2025</span>
-            <h3>ENSAE, Institut Polytechnique de Paris</h3>
-            <p>
-              Master of Science in Engineering, with courses in probability theory,
-              stochastic calculus, statistics, econometrics, simulation and machine
-              learning foundations.
-            </p>
+          <article class="timeline-item">
+            <span class="timeline-year">2021 - 2023</span>
+            <div>
+              <h3>Classe Préparatoire / Prépa</h3>
+              <p>
+                Intensive curriculum in mathematics, economics, literature,
+                philosophy, history and social sciences.
+              </p>
+            </div>
           </article>
-          <article>
-            <span>Jun - Aug 2024</span>
-            <h3>OFI Invest Asset Management</h3>
-            <p>
-              Optimised, cleaned and automated databases in Excel, used Capital IQ
-              to retrieve company financial data, and explored LLM applications for
-              credit research.
-            </p>
+          <article class="timeline-item">
+            <span class="timeline-year">2023 - 2025</span>
+            <div>
+              <h3>ENSAE Paris</h3>
+              <p>
+                Engineering studies focused on probability, statistics,
+                econometrics, stochastic calculus, simulation and machine learning.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2025 - 2026</span>
+            <div>
+              <h3>Imperial College London</h3>
+              <p>
+                MSc Financial Technology with coursework in big data in finance,
+                blockchain, financial econometrics, investments and portfolio management.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">Placeholder</span>
+            <div>
+              <h3>EPFL</h3>
+              <p>
+                Placeholder for research, exchange, robotics, AI, simulation or
+                engineering work to be updated with confirmed details.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">Placeholder</span>
+            <div>
+              <h3>ETH Zürich</h3>
+              <p>
+                Placeholder for technical research experience in robotics,
+                computer vision, medical imaging or autonomous systems.
+              </p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="projects-title">Projects</h2>
-          <p>
-            A few examples from my programming and data work. I will keep this
-            section updated as more projects become public.
-          </p>
+      <section class="content-section" id="experience" data-section>
+        <div class="section-heading reveal">
+          <p class="section-number">02</p>
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Research, engineering and technical execution.</h2>
+          </div>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <p class="card-kicker">Research</p>
+            <h3>Harvard Medical School / Massachusetts General Hospital</h3>
+            <p class="role">Research Engineering Intern · Dates placeholder</p>
+            <ul>
+              <li>Prototype medical imaging workflows and experimental tooling.</li>
+              <li>Connect data processing, modelling and technical validation.</li>
+            </ul>
+            <div class="tags">
+              <span>Medical imaging</span><span>Python</span><span>AI</span>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <p class="card-kicker">Robotics</p>
+            <h3>ETH Zürich</h3>
+            <p class="role">Robotics / AI Research · Dates placeholder</p>
+            <ul>
+              <li>Work on robotics, calibration, perception and embodied systems.</li>
+              <li>Translate research concepts into reproducible prototypes.</li>
+            </ul>
+            <div class="tags">
+              <span>Robotics</span><span>Computer vision</span><span>Simulation</span>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <p class="card-kicker">Engineering</p>
+            <h3>EPFL</h3>
+            <p class="role">Research / Engineering Project · Dates placeholder</p>
+            <ul>
+              <li>Explore advanced engineering systems and applied AI methods.</li>
+              <li>Build structured experiments, reports and technical demos.</li>
+            </ul>
+            <div class="tags">
+              <span>Research</span><span>ML</span><span>Engineering</span>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <p class="card-kicker">Startup</p>
+            <h3>Eieling Technology</h3>
+            <p class="role">Technical Consultant / Engineer · Dates placeholder</p>
+            <ul>
+              <li>Support technical product development and prototype iteration.</li>
+              <li>Bridge requirements, implementation and usable deliverables.</li>
+            </ul>
+            <div class="tags">
+              <span>Prototyping</span><span>Product</span><span>Consulting</span>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <p class="card-kicker">Teaching</p>
+            <h3>Teaching Assistant Roles</h3>
+            <p class="role">Teaching Assistant · Dates placeholder</p>
+            <ul>
+              <li>Support students in technical, mathematical or programming topics.</li>
+              <li>Explain complex methods with clarity and practical examples.</li>
+            </ul>
+            <div class="tags">
+              <span>Teaching</span><span>Mathematics</span><span>Mentoring</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects" data-section>
+        <div class="section-heading reveal">
+          <p class="section-number">03</p>
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected technical work and research prototypes.</h2>
+          </div>
         </div>
 
         <div class="project-grid">
-          <article class="project-card">
-            <div class="project-image project-image-one" aria-hidden="true"></div>
-            <div class="project-body">
-              <p class="tag">Python · NLP</p>
-              <h3>Semantic similarity analysis</h3>
-              <p>
-                Python tool for analysing semantic similarity in audit
-                recommendations, using text-processing and machine learning methods.
-              </p>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Robotics</span>
+              <span>Report</span>
+            </div>
+            <h3>Robotic Ultrasound Platform</h3>
+            <p>
+              Prototype concept for robotic ultrasound acquisition, integrating
+              motion, sensing, calibration and medical imaging constraints.
+            </p>
+            <div class="tags">
+              <span>Robotics</span><span>Medical imaging</span><span>Control</span>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image project-image-two" aria-hidden="true"></div>
-            <div class="project-body">
-              <p class="tag">Data analysis</p>
-              <h3>Weather forecast evaluation</h3>
-              <p>
-                Compared Meteo France predictions with observed weather data to
-                estimate forecast quality and identify prediction gaps.
-              </p>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Calibration</span>
+              <span>Demo</span>
+            </div>
+            <h3>Eye-in-Hand Calibration with UR5 and RealSense</h3>
+            <p>
+              Calibration workflow for aligning camera observations with robot
+              motion using a UR5 arm and Intel RealSense perception stack.
+            </p>
+            <div class="tags">
+              <span>UR5</span><span>RealSense</span><span>OpenCV</span>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image project-image-three" aria-hidden="true"></div>
-            <div class="project-body">
-              <p class="tag">Statistics · Algorithms</p>
-              <h3>Academic programming work</h3>
-              <p>
-                SAS descriptive statistics on European Social Survey data, plus
-                BFS and A* algorithm implementation in a group project.
-              </p>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Vision</span>
+              <span>GitHub</span>
+            </div>
+            <h3>Human Pose Estimation and Body Reconstruction</h3>
+            <p>
+              Computer vision pipeline for estimating human pose and reconstructing
+              body structure from image or video data.
+            </p>
+            <div class="tags">
+              <span>Computer vision</span><span>Deep learning</span><span>3D</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Physics + AI</span>
+              <span>Report</span>
+            </div>
+            <h3>NIRS and Physics-Informed Neural Networks</h3>
+            <p>
+              Exploration of near-infrared spectroscopy modelling with
+              physics-informed neural networks for structured scientific inference.
+            </p>
+            <div class="tags">
+              <span>PINNs</span><span>NIRS</span><span>Python</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Autonomy</span>
+              <span>Demo</span>
+            </div>
+            <h3>Multi-Agent Collision Avoidance</h3>
+            <p>
+              Simulation-oriented project for coordinating multiple agents while
+              preserving safety, efficiency and interpretable motion policies.
+            </p>
+            <div class="tags">
+              <span>Simulation</span><span>Optimization</span><span>Multi-agent</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span>Finance</span>
+              <span>GitHub</span>
+            </div>
+            <h3>Quantitative Finance Research</h3>
+            <p>
+              Financial data research using econometrics, portfolio concepts and
+              Python tooling for analysis, modelling and reproducible reporting.
+            </p>
+            <div class="tags">
+              <span>Finance</span><span>Econometrics</span><span>Python</span>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="skills" aria-labelledby="skills-title">
-        <div>
-          <p class="eyebrow">Skills</p>
-          <h2 id="skills-title">Tools I use</h2>
-          <p>
-            My technical stack is focused on data analysis, statistical modelling,
-            automation and finance-oriented research workflows.
-          </p>
-        </div>
-
-        <div class="skills-panel" aria-label="Skills list">
+      <section class="content-section" id="hobbies" data-section>
+        <div class="section-heading reveal">
+          <p class="section-number">04</p>
           <div>
-            <h3>Programming</h3>
-            <div class="skills-list">
-              <span>Python</span>
-              <span>pandas</span>
-              <span>Polars</span>
-              <span>scikit-learn</span>
-              <span>TensorFlow</span>
-              <span>Keras</span>
-              <span>NLTK</span>
-              <span>SQL</span>
-              <span>R</span>
-              <span>SAS</span>
-            </div>
-          </div>
-          <div>
-            <h3>Finance & productivity</h3>
-            <div class="skills-list">
-              <span>Excel Power Query</span>
-              <span>VBA</span>
-              <span>Capital IQ</span>
-              <span>LaTeX</span>
-              <span>Canvas</span>
-            </div>
-          </div>
-          <div>
-            <h3>Languages</h3>
-            <div class="skills-list">
-              <span>French native</span>
-              <span>English B2+</span>
-              <span>Russian beginner</span>
-            </div>
+            <p class="eyebrow">Hobbies</p>
+            <h2>The personal side of the technical work.</h2>
           </div>
         </div>
-      </section>
 
-      <section class="section volunteering" aria-labelledby="volunteering-title">
-        <div class="section-heading">
-          <p class="eyebrow">Engagement</p>
-          <h2 id="volunteering-title">Beyond coursework</h2>
-        </div>
-
-        <div class="volunteer-grid">
-          <article>
-            <h3>Student Council</h3>
-            <p>
-              Managed partner outreach, logistics coordination and event
-              organisation to improve student life at school and within the
-              Institut Polytechnique de Paris.
-            </p>
+        <div class="hobby-grid">
+          <article class="hobby-card reveal">
+            <h3>Sports / fitness</h3>
+            <p>Placeholder for training, competition, endurance or team sports.</p>
           </article>
-          <article>
-            <h3>Tremplin Association</h3>
-            <p>
-              Volunteered as a mathematics tutor in underprivileged high schools.
-            </p>
+          <article class="hobby-card reveal">
+            <h3>Travel</h3>
+            <p>Curiosity for new places, research cultures and international teams.</p>
           </article>
-          <article>
-            <h3>Scouts and Guides of France</h3>
-            <p>
-              Participated in forest fire prevention and protection efforts with
-              ONF in Marseille.
-            </p>
+          <article class="hobby-card reveal">
+            <h3>Photography</h3>
+            <p>Placeholder for visual storytelling, landscapes or technical imagery.</p>
+          </article>
+          <article class="hobby-card reveal">
+            <h3>Languages / culture</h3>
+            <p>French native, English professional fluency, Russian beginner.</p>
+          </article>
+          <article class="hobby-card reveal">
+            <h3>Technology exploration</h3>
+            <p>Experimenting with new AI tools, robotics stacks and research software.</p>
           </article>
         </div>
       </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <div>
+      <section class="contact-section" id="contact" data-section>
+        <div class="contact-panel reveal">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let us connect.</h2>
+          <h2>Open to consulting, research collaborations, and technical advisory projects.</h2>
           <p>
-            I am open to discussing internships, projects and opportunities in
-            financial technology, data science and quantitative finance.
+            If you are building something technically demanding in AI, robotics,
+            simulation, medical imaging or data-driven finance, I would be glad to talk.
           </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:tristanfabre.tf@gmail.com">Email me</a>
-          <a class="button secondary" href="https://github.com/Tristan-fbr" rel="noreferrer">GitHub</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/tristan-fabre-89b182292/" rel="noreferrer">LinkedIn</a>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:tristanfabre.tf@gmail.com">Email</a>
+            <a
+              class="button secondary"
+              href="https://www.linkedin.com/in/tristan-fabre-89b182292/"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a class="button secondary" href="assets/cv.pdf" download>Download CV</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span data-year></span> Tristan Fabre. Last website update: 2026.</p>
-      <a href="#home">Back to top</a>
+      <p>Designed and built by Tristan Fabre.</p>
+      <p>&copy; <span data-year></span></p>
     </footer>
 
     <script src="script.js"></script>

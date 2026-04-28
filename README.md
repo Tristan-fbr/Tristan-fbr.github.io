@@ -5,9 +5,10 @@ Personal static website for Tristan Fabre, published with GitHub Pages.
 ## Files
 
 - `index.html`: page structure and content
-- `styles.css`: responsive design and accessibility states
+- `style.css`: responsive design and accessibility states
 - `script.js`: small interface interactions
-- `assets/`: CV and portrait image
+- `assets/profile.jpg`: profile picture
+- `assets/cv.pdf`: downloadable CV
 
 ## Deployment
 
