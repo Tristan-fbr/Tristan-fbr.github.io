@@ -408,6 +408,12 @@ h3 {
   color: var(--slate-400);
 }
 
+.timeline-degree {
+  margin-bottom: 8px;
+  color: var(--slate-200);
+  font-weight: 800;
+}
+
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
