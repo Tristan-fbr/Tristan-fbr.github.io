@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Site personnel de Tristan Fbr: projets, competences et contact."
+    >
+    <title>Tristan Fbr | Site personnel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+        <span class="brand-mark">TF</span>
+        <span>Tristan Fbr</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#competences">Competences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio personnel</p>
+          <h1 id="hero-title">Bonjour, moi c'est Tristan.</h1>
+          <p class="hero-text">
+            Je construis mon espace web pour presenter mes projets, mon parcours
+            et les choses que j'aime creer. Cette page est publiee avec GitHub Pages.
+          </p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button primary" href="#projets">Voir mes projets</a>
+            <a class="button secondary" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="screen">
+            <div class="screen-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="code-card">
+              <span class="line short"></span>
+              <span class="line"></span>
+              <span class="line medium"></span>
+              <span class="line accent"></span>
+            </div>
+            <div class="status-card">
+              <strong>En ligne</strong>
+              <span>GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projets" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selection</p>
+          <h2 id="projects-title">Projets</h2>
+          <p>
+            Une selection de travaux web, d'experimentations et d'idees que je
+            developpe au fil de mon apprentissage.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image project-image-one"></div>
+            <div class="project-body">
+              <p class="tag">Web</p>
+              <h3>Projet vitrine</h3>
+              <p>
+                Une page claire pour presenter une idee, un service ou un profil.
+              </p>
+              <a href="https://github.com/Tristan-fbr" aria-label="Ouvrir le projet vitrine">Decouvrir</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-image-two"></div>
+            <div class="project-body">
+              <p class="tag">Code</p>
+              <h3>Application interactive</h3>
+              <p>
+                Une interface simple avec des interactions fluides en JavaScript.
+              </p>
+              <a href="https://github.com/Tristan-fbr" aria-label="Ouvrir l'application interactive">Decouvrir</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-image-three"></div>
+            <div class="project-body">
+              <p class="tag">Design</p>
+              <h3>Experience utilisateur</h3>
+              <p>
+                Une maquette ou un prototype pense pour etre lisible et agreable.
+              </p>
+              <a href="https://github.com/Tristan-fbr" aria-label="Ouvrir l'experience utilisateur">Decouvrir</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="competences" aria-labelledby="skills-title">
+        <div>
+          <p class="eyebrow">Savoir-faire</p>
+          <h2 id="skills-title">Competences</h2>
+          <p>
+            Je travaille avec les bases du web moderne pour produire des pages
+            lisibles, rapides et agreables sur ordinateur comme sur mobile.
+          </p>
+        </div>
+
+        <div class="skills-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>GitHub Pages</span>
+          <span>Responsive design</span>
+          <span>Accessibilite</span>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="parcours" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Progression</p>
+          <h2 id="timeline-title">Parcours</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <h3>Apprendre</h3>
+            <p>Explorer les bases du web et comprendre comment publier un site.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Construire</h3>
+            <p>Transformer les idees en pages propres, rapides et lisibles.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Partager</h3>
+            <p>Mettre les projets en ligne pour les montrer facilement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">On se parle ?</h2>
+          <p>
+            Retrouvez mes projets et mon code sur GitHub. Les autres liens
+            pourront etre ajoutes au fur et a mesure.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/Tristan-fbr">Voir mon GitHub</a>
+          <a class="button secondary" href="#projets">Revoir les projets</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Tristan Fbr. Tous droits reserves.</p>
+      <a href="#accueil">Retour en haut</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
