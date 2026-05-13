@@ -12,6 +12,7 @@ Personal static website for Tristan Fabre, published with GitHub Pages.
 - `assets/statapp-tristan.pdf`: Meteo France / statistics project report
 - `assets/sas-memoire.pdf`: SAS report
 - `assets/monte-carlo-slides.pdf`: Monte Carlo slides
+- `notebooks/quantum_mc_pricing_stage.ipynb`: stage notebook on quantum Monte Carlo pricing
 
 ## Deployment
 
